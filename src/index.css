@@ -10,6 +10,16 @@
   --border-color: #eaeaea;
   --border-radius: 12px;
   --transition: all 0.3s ease;
+  --header-bg: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-main: #ffffff;
+  --text-muted: #d1d5db;
+  --border-color: #333333;
+  --header-bg: rgba(18, 18, 18, 0.95);
 }
 
 * {
@@ -40,7 +50,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: var(--header-bg);
   backdrop-filter: blur(8px);
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
