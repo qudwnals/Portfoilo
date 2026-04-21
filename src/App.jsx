@@ -34,10 +34,10 @@ function App() {
       <Header theme={theme} toggleTheme={toggleTheme} />
       <main>
         <ProfileSection />
-        <Skills />
         <Experience />
         <Awards />
         <ProjectGallery />
+        <Skills />
       </main>
       <Contact />
     </div>

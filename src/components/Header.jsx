@@ -17,10 +17,10 @@ const Header = ({ theme, toggleTheme }) => {
         </div>
         <nav className="nav-menu" style={{ display: 'flex', alignItems: 'center' }}>
           <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
-          <button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button>
           <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
           <button onClick={() => scrollToSection('awards')} className="nav-link">Awards</button>
           <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
+          <button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button>
           <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
           
           <button 
