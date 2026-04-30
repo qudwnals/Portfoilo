@@ -49,6 +49,7 @@ export const skills = [
     color: "#8b5cf6",
     items: [
       { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
       { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
       { name: "Swift", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" },
     ]
@@ -58,6 +59,8 @@ export const skills = [
     color: "#06b6d4",
     items: [
       { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { name: "AWS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
+      { name: "GitHub Actions", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" },
       { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
       { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
     ]
@@ -73,6 +76,16 @@ export const skills = [
   },
 ];
 export const projects = [
+  {
+    id: "mercenary",
+    title: "Mercenary (용병 매칭 플랫폼)",
+    role: "1인 개발 (Frontend · Backend · DevOps)",
+    techStack: ["Java", "Spring Boot", "MySQL", "Redis", "Redisson", "Docker", "AWS Lightsail", "React", "TypeScript"],
+    summary: "위치기반 축구 용병 매칭 플랫폼 — k6 부하 테스트로 동시성 정합성 100%, 캐시 적용 시 응답속도 76% 개선 정량 검증",
+    thumbnail: "/projects/mercenary/main.png",
+    details: "CUSTOM_COMPONENT:Mercenary",
+    github: "https://github.com/Mercenary-Project"
+  },
   {
     id: "open-closet",
     title: "오픈 클로젯 (Open Closet)",

@@ -3,12 +3,14 @@ import ReactMarkdown from 'react-markdown';
 import OpenCloset from './project-details/OpenCloset';
 import RunnerHigh from './project-details/RunnerHigh';
 import SentiLogic from './project-details/SentiLogic';
+import Mercenary from './project-details/Mercenary';
 
 // 컴포넌트 매핑 객체
 const detailComponents = {
   OpenCloset: <OpenCloset />,
   RunnerHigh: <RunnerHigh />,
-  SentiLogic: <SentiLogic />
+  SentiLogic: <SentiLogic />,
+  Mercenary: <Mercenary />
 };
 
 const ProjectModal = ({ project, onClose }) => {
