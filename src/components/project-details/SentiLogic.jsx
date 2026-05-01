@@ -1,21 +1,25 @@
 import React from 'react';
 
+const M = ({ children }) => <span className="metric-badge">{children}</span>;
+const G = ({ children }) => <span className="metric-badge-green">{children}</span>;
+
 const SentiLogic = () => {
   return (
     <div className="project-detail-container">
+
       {/* 1. Overview */}
       <section className="detail-section">
         <h3 className="section-sub-title">Overview</h3>
         <img src="/projects/senti-logic/main-dashboard.png" alt="Main Dashboard" className="img-fluid" style={{ marginBottom: '30px' }} />
 
-        <p style={{ fontWeight: '800', color: '#000', fontSize: '1.1rem', marginBottom: '20px' }}>
+        <p style={{ fontWeight: '800', color: 'var(--text-main)', fontSize: '1.1rem', marginBottom: '20px' }}>
           본 프로젝트는 전국 단위의 거시 경제 흐름과 지역별 미시 경제 이슈를 통합 분석하고,
           이를 주식·가상화폐 등 자산 지표와 연결하여 데이터 기반의 인사이트를 제공하는 플랫폼입니다.
         </p>
         <ul className="detail-list bullet">
           <li><strong>목적:</strong> 파편화된 지역별 경제 뉴스를 수집·분석하여 지역별 경제 온도를 시각화하고, 시장 지표와의 상관관계를 규명함.</li>
-          <li><strong>핵심 가치:</strong> 실시간 데이터 파이프라인 구축 + NLP 기반 감성 분석 + 인터랙티브 시각화 대시보드.</li>
-          <li><strong>주요 특징:</strong> 12개 권역 언론사 자동 스크래핑, KoBERT 기반 경제 체감 지수 산출, KOSPI/KOSDAQ 상관계수(r) 분석.</li>
+          <li><strong>핵심 가치:</strong> <M>실시간 데이터 파이프라인</M> 구축 + <M>NLP 기반 감성 분석</M> + 인터랙티브 시각화 대시보드.</li>
+          <li><strong>주요 특징:</strong> <M>12개 권역</M> 언론사 자동 스크래핑, <M>KoBERT</M> 기반 경제 체감 지수 산출, <M>KOSPI/KOSDAQ</M> 상관계수(r) 분석.</li>
         </ul>
       </section>
 
@@ -45,38 +49,46 @@ const SentiLogic = () => {
       {/* 3. Contributions */}
       <section className="detail-section">
         <h3 className="section-sub-title">Contributions</h3>
+
         <div className="contribution-item">
-          <div className="contribution-heading">Kiwi 기반 키워드 추출 로직 구현</div>
+          <h4 className="contribution-heading">📌 Kiwi 기반 키워드 추출 로직 구현</h4>
           <p>
-            뉴스 기사 제목과 본문에서 <strong>Kiwi(kiwipiepy)</strong> 기반 형태소 분석을 활용해 핵심 키워드를 추출하는 로직을 개발했습니다.
-            불용어 제거와 fallback 처리까지 포함하여 실제 적재 파이프라인에서 안정적으로 동작하도록 구현했습니다.
+            뉴스 기사 제목과 본문에서 <M>Kiwi(kiwipiepy)</M> 기반 형태소 분석을 활용해 핵심 키워드를 추출하는 로직을 개발했습니다.
+            <G>불용어 제거</G>와 <G>Fallback 처리</G>까지 포함하여 실제 적재 파이프라인에서 안정적으로 동작하도록 구현했습니다.
           </p>
         </div>
+
         <div className="contribution-item">
-          <div className="contribution-heading">시장 지표 연동 및 통합 분석 대시보드 구현</div>
+          <h4 className="contribution-heading">📌 시장 지표 연동 및 통합 분석 대시보드 구현</h4>
           <p>
-            FinanceDataReader를 활용해 <strong>KOSPI/KOSDAQ</strong> 지수를 실시간으로 불러오고, 뉴스 감성 데이터와 결합해
+            FinanceDataReader를 활용해 <M>KOSPI/KOSDAQ</M> 지수를 실시간으로 불러오고, 뉴스 감성 데이터와 결합해
             변동률, 상관관계, 회귀 분석, 변동성 지표를 확인할 수 있도록 구성했습니다.
-            Streamlit 기반으로 KPI 카드, 상세 분석 탭, 뉴스 피드 등의 UI를 구현하여 분석 환경을 구축했습니다.
           </p>
+          <ul className="detail-list bullet" style={{ marginTop: '8px' }}>
+            <li>Streamlit 기반 <strong>KPI 카드, 상세 분석 탭, 뉴스 피드</strong> UI 구현</li>
+            <li><G>5개 분석 대시보드</G> (종합 모니터링, GIS 지도, 자산 상관관계, 감성 캘린더, 기술적 지표) 통합 제공</li>
+          </ul>
         </div>
       </section>
 
       {/* 4. Problem Solving */}
       <section className="detail-section">
         <h3 className="section-sub-title">Problem Solving</h3>
+
         <div className="issue-card">
-          <div className="issue-title">한국어 텍스트 노이즈 및 파이프라인 안정성 문제</div>
-          <p>
-            기자명, 관용 표현 등 핵심 내용외의 노이즈가 키워드 분석 품질을 저하시키는 문제가 있었습니다.
-            또한 형태소 분석 환경에 따른 예외 발생 시 파이프라인이 중단될 위험이 있었습니다.
-          </p>
+          <h4 className="issue-title">✅ 한국어 텍스트 노이즈 및 파이프라인 안정성 문제</h4>
           <ul className="issue-details">
-            <li>Kiwi 형태소 분석을 적용하여 일반명사와 고유명사만 선별하고, 프로젝트 특화 불용어 사전 구축.</li>
-            <li>라이브러리 미설치나 예외 상황에 대비한 <strong>Fallback 로직(기본 공백 분할 방식)</strong> 구현으로 안정성 확보.</li>
+            <li><strong>Analysis:</strong> 기자명, 관용 표현 등 노이즈가 <M>키워드 분석 품질을 저하</M>시키고, 형태소 분석 예외 발생 시 <M>파이프라인 전체 중단</M> 위험 존재.</li>
+          </ul>
+          <div className="insight-block" style={{ margin: '16px 0' }}>
+            <strong>Solution:</strong> Kiwi로 <strong>일반명사·고유명사만 선별</strong> + 프로젝트 특화 불용어 사전 구축 + <strong>Fallback 로직</strong>(기본 공백 분할 방식)으로 안정성 확보.
+          </div>
+          <ul className="issue-details">
+            <li><G>Result:</G> 노이즈 필터링으로 키워드 품질 향상, Fallback 로직으로 파이프라인 무중단 운영 보장.</li>
           </ul>
         </div>
-        <div className="code-block">
+
+        <div className="code-block" style={{ marginTop: '16px' }}>
           <img src="/projects/senti-logic/code-snippet.png" alt="Kiwi extraction logic" className="img-fluid" style={{ marginTop: 0, boxShadow: 'none' }} />
         </div>
       </section>
@@ -125,6 +137,7 @@ const SentiLogic = () => {
           </div>
         </div>
       </section>
+
     </div>
   );
 };
