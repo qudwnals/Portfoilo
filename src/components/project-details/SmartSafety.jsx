@@ -78,7 +78,7 @@ const SmartSafety = () => {
       </section>
 
       <section className="detail-section">
-        <h3 className="section-sub-title">Data Model (ERD)</h3>
+        <h3 className="section-sub-title">ERD</h3>
         <img
           src="/projects/smart-safety/erd.png"
           alt="사용자, 시설, 카메라, 위험 이벤트, 알림과 긴급 출동 이력의 관계를 나타낸 스마트 안전 관제 시스템 ERD"

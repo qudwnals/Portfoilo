@@ -154,9 +154,9 @@ const Mercenary = () => {
         </ul>
       </section>
 
-      {/* 5. Data Model */}
+      {/* 5. ERD */}
       <section className="detail-section">
-        <h3 className="section-sub-title">Data Model (ERD)</h3>
+        <h3 className="section-sub-title">ERD</h3>
         <img src="/projects/mercenary/erd.png" alt="ERD" className="img-fluid" />
         <ul className="detail-list bullet" style={{ marginTop: '16px' }}>
           <li><strong>members</strong> — Kakao OAuth ID, 닉네임, 선호 포지션, 실력 수준, 매너 점수</li>

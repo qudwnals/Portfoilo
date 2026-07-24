@@ -1,7 +1,6 @@
 export const personalInfo = {
   name: "민병주",
   role: "풀스택 · 백엔드 개발자",
-  heroSubtitle: "실시간 데이터 흐름을 끝까지 연결하고, 장애와 보안을 설계하는 개발자 민병주입니다.",
   birth: "2001.11.26",
   education: {
     school: "동의대학교 응용소프트웨어 공학과",

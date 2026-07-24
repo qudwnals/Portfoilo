@@ -18,8 +18,6 @@ const ProfileSection = () => {
           <h1 className="profile-name">
             {personalInfo.name} <span>|</span> <span className="profile-role">{personalInfo.role}</span>
           </h1>
-          <p className="profile-subtitle">{personalInfo.heroSubtitle}</p>
-
           <div className="hero-links" style={{ justifyContent: 'center' }}>
             <a href="#projects" className="btn-primary">프로젝트 보기</a>
           </div>

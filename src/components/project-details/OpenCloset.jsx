@@ -59,7 +59,7 @@ const OpenCloset = () => {
         </div>
 
         <div className="contribution-item">
-          <h4 className="contribution-heading">📌 DB 아키텍처 설계</h4>
+          <h4 className="contribution-heading">📌 ERD</h4>
           <img src="/projects/open-closet/erd.jpg" alt="DB ERD" className="img-fluid mt-2" />
         </div>
 
