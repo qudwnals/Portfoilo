@@ -159,6 +159,31 @@ const SmartSafety = () => {
 
       <section className="detail-section">
         <h3 className="section-sub-title">Result & Demo</h3>
+        <div className="detail-video-card detail-youtube-card">
+          <h4 className="contribution-heading">최종 서비스 구현 영상</h4>
+          <a
+            className="youtube-preview"
+            href="https://www.youtube.com/watch?v=O1-JNhcpvDQ"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="AI 스마트 안전 관제 시스템 최종 구현 영상을 YouTube에서 시청"
+          >
+            <img
+              src="https://i.ytimg.com/vi/O1-JNhcpvDQ/hqdefault.jpg"
+              alt="AI 스마트 안전 관제 시스템 최종 구현 영상 썸네일"
+              loading="lazy"
+            />
+            <span className="youtube-play" aria-hidden="true">▶</span>
+          </a>
+          <p className="youtube-demo-copy">
+            회원가입부터 관할 기관 자동 등록, 실시간 CCTV 관제, AI 위험 이벤트 감지,
+            웹 알림과 Android 푸시까지 전체 서비스 흐름을 확인할 수 있습니다.
+          </p>
+          <a className="youtube-watch-button" href="https://www.youtube.com/watch?v=O1-JNhcpvDQ" target="_blank" rel="noreferrer">
+            YouTube에서 전체 영상 보기 ↗
+          </a>
+        </div>
+
         <div className="detail-media-grid">
           <figure className="detail-media-card">
             <img
