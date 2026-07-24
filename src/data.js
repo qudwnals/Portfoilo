@@ -1,17 +1,17 @@
 export const personalInfo = {
   name: "민병주",
-  role: "백엔드 개발자",
-  heroSubtitle: "안정적인 서비스를 설계하고 데이터로 문제를 해결하는 백엔드 개발자, 민병주입니다.",
+  role: "풀스택 · 백엔드 개발자",
+  heroSubtitle: "실시간 데이터 흐름을 끝까지 연결하고, 장애와 보안을 설계하는 개발자 민병주입니다.",
   birth: "2001.11.26",
   education: {
     school: "동의대학교 응용소프트웨어 공학과",
     period: "2020.03 ~ 2026.02 졸업"
   },
-  about: `Java · Spring Boot를 주력으로, 성능과 안정성을 수치로 증명하는 백엔드 개발자입니다. 위치 기반 축구 매칭 플랫폼 Mercenary를 1인 개발로 완성하며 Redisson 분산 락으로 100명 동시 신청 환경에서 동시성 정합성 100%를 달성하고, Redis 캐싱으로 API 응답 속도를 최대 76% 개선했습니다. k6 부하 테스트로 모든 결과를 직접 정량 검증했습니다.
+  about: `Java · Spring Boot를 중심으로 웹과 모바일까지 연결하며, 실시간 시스템의 성능과 안정성을 수치로 검증하는 풀스택·백엔드 개발자입니다. AI 스마트 안전 관제 프로젝트에서 인증·회원가입, MQTT 이벤트 중계, STOMP 실시간 알림, 영상 오버레이 동기화, Capacitor Android·FCM 푸시를 구현했습니다. 단일 MQTT callback 경로에서 발생한 38초 지연을 구간별 로그로 좁히고 이벤트와 오버레이 subscriber를 분리해 사용자 관점 알림을 약 0.8초까지 개선했습니다.
 
-팀 프로젝트에서도 핵심 역할을 맡아왔습니다. 오픈 클로젯 백엔드를 전담 설계하며 JPQL Boolean Logic 기반 동적 쿼리로 다중 조건 검색의 DB 호출을 1회로 최적화했고, 러너스 하이에서는 심박수·케이던스 기반 3단계 맞춤형 러닝 크루 매칭을 기획·개발해 교내 캡스톤 경진대회 최우수상과 지역현안 경진대회 은상을 수상했습니다.
+위치 기반 축구 매칭 플랫폼 Mercenary를 1인 개발로 완성하며 Redisson 분산 락으로 100명 동시 신청 환경에서 동시성 정합성 100%를 달성하고, Redis 캐싱으로 API 응답 속도를 최대 76% 개선했습니다. 오픈 클로젯에서는 JPQL 동적 쿼리로 다중 조건 검색을 최적화했고, 러너스 하이에서는 건강 데이터 기반 매칭 서비스를 개발해 교내 최우수상과 지역현안 경진대회 은상을 수상했습니다.
 
-백엔드에  AWS 인프라 자동화까지 필요에 따라 기술 영역을 확장해왔습니다. 매 프로젝트에서 이전의 한계를 다음 기술 도전으로 삼아, 분산 시스템·부하 테스트·배포 자동화 등 실무 역량을 스스로 쌓아가고 있습니다.`,
+기능 구현에서 끝내지 않고 장애를 재현하고, 구간을 계측하고, 구조를 바꾼 뒤 다시 검증하는 과정을 중요하게 생각합니다. 분산 시스템·보안·부하 테스트·배포 자동화까지 서비스에 필요한 영역을 지속적으로 확장하고 있습니다.`,
   email: "cwjk1008@naver.com",
   github: "qudwnals",
   velog: "",
@@ -40,6 +40,7 @@ export const skills = [
     items: [
       { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
       { name: "MariaDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" },
+      { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
       { name: "SQLite", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
       { name: "Redis", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
     ]
@@ -52,6 +53,17 @@ export const skills = [
       { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
       { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
       { name: "Swift", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" },
+    ]
+  },
+  {
+    category: "Realtime / Mobile",
+    color: "#f97316",
+    items: [
+      { name: "MQTT", logo: "https://cdn.simpleicons.org/mqtt/660066" },
+      { name: "WebSocket / STOMP", logo: "https://cdn.simpleicons.org/socketdotio/010101" },
+      { name: "Firebase Cloud Messaging", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" },
+      { name: "Capacitor", logo: "https://cdn.simpleicons.org/capacitor/119EFF" },
+      { name: "Android", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" },
     ]
   },
   {
@@ -75,7 +87,20 @@ export const skills = [
     ]
   },
 ];
+
 export const projects = [
+  {
+    id: "smart-safety",
+    title: "AI 스마트 안전 관제 시스템",
+    role: "풀스택·백엔드 개발 (6인 팀)",
+    period: "2026.05 ~ 2026.07",
+    techStack: ["Java 21", "Spring Boot", "PostgreSQL", "Redis", "MQTT", "STOMP", "React", "TypeScript", "Capacitor", "FCM"],
+    summary: "AI 위험 탐지부터 MQTT·STOMP 실시간 관제와 Android 푸시까지 연결하고, 38초 알림 지연을 약 0.8초로 개선한 End-to-End 안전 서비스",
+    thumbnail: "/projects/smart-safety/dashboard.png",
+    details: "CUSTOM_COMPONENT:SmartSafety",
+    featured: true,
+    github: "https://github.com/strangeRookies"
+  },
   {
     id: "mercenary",
     title: "Mercenary (용병 매칭 플랫폼)",
@@ -92,7 +117,7 @@ export const projects = [
     role: "백엔드 개발 (팀원 4명 중 2명 백엔드)",
     techStack: ["Spring Boot", "MariaDB", "Docker", "React", "JPQL"],
     summary: "위치 기반 P2P 중고의류 대여 서비스 플랫폼",
-    thumbnail: "/projects/open-closet/main-mockup.png", // 업로드하신 고화질 목업 이미지로 변경
+    thumbnail: "/projects/open-closet/main-mockup.png",
     details: "CUSTOM_COMPONENT:OpenCloset",
     github: "https://github.com/DevFlow-DEU/OpenCloset_Back/tree/Min"
   },
@@ -122,13 +147,13 @@ export const projects = [
 export const experiences = [
   {
     id: 1,
-    title: "SK쉴더스 루키즈 5기 부트캠프 ",
+    title: "SK쉴더스 루키즈 5기 부트캠프",
     period: "2026년 1월 30일 → 2026년 7월 30일 (부트캠프)",
     role: "지능형 애플리케이션 개발자 양성과정",
     details: [
-      "데이터 분석 위한 파이썬 언어학습",
-      "지능형 애플리케이션 웹서비스 개발",
-      "아이디어톤 & 생성형 AI기반 애플리케이션 보안 개발"
+      "AI 위험 탐지부터 웹 실시간 관제와 Android 푸시까지 연결한 스마트 안전 관제 서비스 개발",
+      "Spring Security·JWT·Redis 기반 인증과 주소 기반 관할 소방서·119안전센터 자동 매칭 구현",
+      "MQTT 이벤트·오버레이 subscriber 분리로 38초 알림 지연을 약 0.8초까지 개선"
     ]
   },
   {
@@ -155,15 +180,14 @@ export const experiences = [
   {
     id: 4,
     title: "교내 캡스톤 경진 디자인 대회, 지역현안 캡스톤 경진대회",
-    period: "2024.12.02 → 2024.02.13 (공모전)",
+    period: "2024.12.02 → 2025.02.13 (공모전)",
     role: "러너스 하이 건강 데이터 기반 맞춤형 러닝 크루 매칭 서비스 개발 & 백엔드 개발",
     details: [
       "Nest.js 환경에서 심박수·케이던스 데이터 분석을 통한 3단계 맞춤형 크루 매칭 설계 및 구현",
-      "라즈베리파이 와 Docker 기반의 독립 서버 인프라 구축 및 SwiftUI 연동 데이터 수집 환경 조성",
+      "라즈베리파이와 Docker 기반의 독립 서버 인프라 구축 및 SwiftUI 연동 데이터 수집 환경 조성",
       "캡스톤디자인 경진대회 최우수상(LINC 3.0) 및 은상 수상을 통해 데이터 기반 매칭 시스템 기술력 검증"
     ]
   },
-
   {
     id: 5,
     title: "DOD 학과 개발 동아리",

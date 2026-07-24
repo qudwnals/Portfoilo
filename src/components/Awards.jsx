@@ -10,7 +10,7 @@ const Awards = () => {
       <p className="section-subheading">도전과 성장의 기록입니다.</p>
 
       <div className="awards-grid">
-        {awards.map((award, index) => (
+        {awards.map((award) => (
           <div key={award.id} className="award-card">
             <div className="award-card-icon">
               <FaTrophy />
