@@ -1,19 +1,19 @@
 import React from 'react';
-import { personalInfo, skills } from '../data';
+import { personalInfo } from '../data';
 import { FaCalendar, FaEnvelope, FaGithub, FaGraduationCap } from 'react-icons/fa';
 
 const ProfileSection = () => {
   return (
     <section id="about" className="section container profile-section" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
       <div className="profile-grid">
-
-        {/* 좌측 (Hero 영역) */}
         <div className="profile-left">
           <img
             src={personalInfo.profileImage}
             alt={`${personalInfo.name} Profile`}
             className="hero-profile-img"
-            onError={(e) => { e.target.src = 'https://via.placeholder.com/320?text=Profile'; }}
+            onError={(event) => {
+              event.currentTarget.src = 'https://via.placeholder.com/320?text=Profile';
+            }}
           />
           <h1 className="profile-name">
             {personalInfo.name} <span>|</span> <span className="profile-role">{personalInfo.role}</span>
@@ -22,16 +22,14 @@ const ProfileSection = () => {
 
           <div className="hero-links" style={{ justifyContent: 'center' }}>
             <a href="#projects" className="btn-primary">프로젝트 보기</a>
-
           </div>
         </div>
 
-        {/* 우측 (About & Skills 영역) */}
         <div className="profile-right">
           <h2 className="section-title left-align">About Me</h2>
           <div className="about-paragraphs">
-            {personalInfo.about.split('\n\n').map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+            {personalInfo.about.split('\n\n').map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
 
@@ -54,7 +52,11 @@ const ProfileSection = () => {
               <FaGithub className="detail-icon" />
               <div className="detail-info">
                 <strong>Github</strong>
-                <span><a href={`https://github.com/${personalInfo.github}`} target="_blank" rel="noreferrer" className="detail-link">github.com/{personalInfo.github}</a></span>
+                <span>
+                  <a href={`https://github.com/${personalInfo.github}`} target="_blank" rel="noreferrer" className="detail-link">
+                    github.com/{personalInfo.github}
+                  </a>
+                </span>
               </div>
             </div>
             <div className="detail-item">
