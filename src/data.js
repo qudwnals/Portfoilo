@@ -92,7 +92,7 @@ export const projects = [
   {
     id: "smart-safety",
     title: "AI 스마트 안전 관제 시스템",
-    role: "풀스택·백엔드 개발 (6인 팀)",
+    role: "풀스택·백엔드 개발 (5인 팀)",
     period: "2026.05 ~ 2026.07",
     techStack: ["Java 21", "Spring Boot", "PostgreSQL", "Redis", "MQTT", "STOMP", "React", "TypeScript", "Capacitor", "FCM"],
     summary: "AI 위험 탐지부터 MQTT·STOMP 실시간 관제와 Android 푸시까지 연결하고, 38초 알림 지연을 약 0.8초로 개선한 End-to-End 안전 서비스",
