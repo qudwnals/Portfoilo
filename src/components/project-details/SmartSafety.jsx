@@ -45,7 +45,53 @@ const SmartSafety = () => {
       </section>
 
       <section className="detail-section">
-        <h3 className="section-sub-title">My Contributions</h3>
+        <h3 className="section-sub-title">Participants</h3>
+        <ul className="detail-list bullet">
+          <li>총 5명 팀 프로젝트</li>
+          <li><strong>본인 역할:</strong> 풀스택·백엔드 개발</li>
+          <li><strong>담당 범위:</strong> 인증·회원가입, 관할 기관 자동 매칭, MQTT/STOMP 이벤트 중계, Android FCM 푸시 연동</li>
+        </ul>
+      </section>
+
+      <section className="detail-section">
+        <h3 className="section-sub-title">Tech Stack & Architecture</h3>
+        <img
+          src="/projects/smart-safety/architecture.png"
+          alt="AI 서버, Spring Boot 백엔드, PostgreSQL, Redis, React와 Android 클라이언트로 구성된 시스템 구조"
+          className="img-fluid"
+          loading="lazy"
+        />
+        <div className="realtime-flow">
+          <span>RTSP Camera</span>
+          <span>AI Detection</span>
+          <span>MQTT Broker</span>
+          <span>Spring Boot</span>
+          <span>STOMP / FCM</span>
+          <span>Web / Android</span>
+        </div>
+        <ul className="detail-list bullet">
+          <li><strong>Backend:</strong> Java 21, Spring Boot 3.3, Security, JPA, Redis, PostgreSQL</li>
+          <li><strong>Realtime:</strong> Eclipse Paho MQTT, Spring Integration, WebSocket/STOMP</li>
+          <li><strong>Client:</strong> React, TypeScript, Capacitor Android, Firebase Cloud Messaging</li>
+          <li><strong>AI Integration:</strong> Python, YOLO Pose, OpenCV, MQTT payload contract</li>
+        </ul>
+      </section>
+
+      <section className="detail-section">
+        <h3 className="section-sub-title">Data Model (ERD)</h3>
+        <img
+          src="/projects/smart-safety/erd.png"
+          alt="사용자, 시설, 카메라, 위험 이벤트, 알림과 긴급 출동 이력의 관계를 나타낸 스마트 안전 관제 시스템 ERD"
+          className="img-fluid"
+          loading="lazy"
+        />
+        <p className="caption">
+          사용자·보호 대상·시설·카메라를 기준으로 AI 위험 이벤트, 알림, 스냅샷, 긴급 출동 이력을 연결한 데이터 모델입니다.
+        </p>
+      </section>
+
+      <section className="detail-section">
+        <h3 className="section-sub-title">Contributions</h3>
         <div className="contribution-item">
           <h4 className="contribution-heading">인증·회원가입과 관할 기관 자동 매칭</h4>
           <ul className="detail-list bullet">
@@ -72,30 +118,6 @@ const SmartSafety = () => {
             <li>alertEventId + deviceId 단위 예약으로 중복 발송을 차단하고 영구 오류 기기를 비활성화</li>
           </ul>
         </div>
-      </section>
-
-      <section className="detail-section">
-        <h3 className="section-sub-title">Architecture</h3>
-        <img
-          src="/projects/smart-safety/architecture.png"
-          alt="AI 서버, Spring Boot 백엔드, PostgreSQL, Redis, React와 Android 클라이언트로 구성된 시스템 구조"
-          className="img-fluid"
-          loading="lazy"
-        />
-        <div className="realtime-flow">
-          <span>RTSP Camera</span>
-          <span>AI Detection</span>
-          <span>MQTT Broker</span>
-          <span>Spring Boot</span>
-          <span>STOMP / FCM</span>
-          <span>Web / Android</span>
-        </div>
-        <ul className="detail-list bullet">
-          <li><strong>Backend:</strong> Java 21, Spring Boot 3.3, Security, JPA, Redis, PostgreSQL</li>
-          <li><strong>Realtime:</strong> Eclipse Paho MQTT, Spring Integration, WebSocket/STOMP</li>
-          <li><strong>Client:</strong> React, TypeScript, Capacitor Android, Firebase Cloud Messaging</li>
-          <li><strong>AI Integration:</strong> Python, YOLO Pose, OpenCV, MQTT payload contract</li>
-        </ul>
       </section>
 
       <section className="detail-section">
@@ -136,7 +158,7 @@ const SmartSafety = () => {
       </section>
 
       <section className="detail-section">
-        <h3 className="section-sub-title">Service Experience</h3>
+        <h3 className="section-sub-title">Result & Demo</h3>
         <div className="detail-media-grid">
           <figure className="detail-media-card">
             <img
