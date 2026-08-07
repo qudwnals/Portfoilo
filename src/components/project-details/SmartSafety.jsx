@@ -54,6 +54,26 @@ const SmartSafety = () => {
       </section>
 
       <section className="detail-section">
+        <h3 className="section-sub-title">Awards</h3>
+        <div className="project-award-highlight">
+          <div>
+            <span className="metric-badge-green">🏆 우수상</span>
+            <h4 className="contribution-heading">2026 지능형 애플리케이션 개발자 양성과정 5기 최종 프로젝트</h4>
+            <p>
+              SK쉴더스가 주최한 최종 프로젝트에서 AI 영상분석 기반 이상행위 탐지 시스템을 개발해 우수상을 수상했습니다.
+            </p>
+            <p className="caption">2026년 7월 30일 · 팀명: 이상행</p>
+          </div>
+          <img
+            src="/projects/smart-safety/award-excellence.jpg"
+            alt="SK쉴더스 2026 지능형 애플리케이션 개발자 양성과정 5기 최종 프로젝트 우수상 상장"
+            className="project-award-image"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section className="detail-section">
         <h3 className="section-sub-title">Tech Stack & Architecture</h3>
         <img
           src="/projects/smart-safety/architecture.png"
