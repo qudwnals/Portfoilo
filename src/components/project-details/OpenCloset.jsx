@@ -6,6 +6,21 @@ const G = ({ children }) => <span className="metric-badge-green">{children}</spa
 const OpenCloset = () => {
   return (
     <div className="project-detail-container">
+      <div className="detail-metrics-grid">
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">87.5%</span>
+          <span className="detail-metric-label">시장 검증 긍정 응답</span>
+        </div>
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">DB 호출 1회</span>
+          <span className="detail-metric-label">다중 조건 검색 최적화</span>
+        </div>
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">백엔드 전체 설계</span>
+          <span className="detail-metric-label">4인 팀 프로젝트</span>
+        </div>
+      </div>
+
       <img src="/projects/open-closet/main-mockup.png" alt="Overview Mockup" className="img-fluid" />
       <img src='/projects/open-closet/market-validation.png' alt='market-validation' className="img-fluid" />
 

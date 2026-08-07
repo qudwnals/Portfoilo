@@ -7,6 +7,21 @@ const RunnerHigh = () => {
   return (
     <div className="project-detail-container">
 
+      <div className="detail-metrics-grid">
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">3가지</span>
+          <span className="detail-metric-label">맞춤형 매칭 로직</span>
+        </div>
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">최우수상 · 은상</span>
+          <span className="detail-metric-label">캡스톤 경진대회 수상</span>
+        </div>
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">건강 데이터</span>
+          <span className="detail-metric-label">심박수·케이던스 기반</span>
+        </div>
+      </div>
+
       {/* 1. Overview */}
       <section className="detail-section">
         <h3 className="section-sub-title">Overview</h3>

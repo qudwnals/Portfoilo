@@ -7,6 +7,21 @@ const SentiLogic = () => {
   return (
     <div className="project-detail-container">
 
+      <div className="detail-metrics-grid">
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">12개 권역</span>
+          <span className="detail-metric-label">지역 뉴스 자동 수집</span>
+        </div>
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">5개</span>
+          <span className="detail-metric-label">통합 분석 대시보드</span>
+        </div>
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">KoBERT</span>
+          <span className="detail-metric-label">경제 뉴스 감성 분석</span>
+        </div>
+      </div>
+
       {/* 1. Overview */}
       <section className="detail-section">
         <h3 className="section-sub-title">Overview</h3>

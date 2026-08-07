@@ -7,6 +7,21 @@ const Mercenary = () => {
   return (
     <div className="project-detail-container">
 
+      <div className="detail-metrics-grid">
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">정합성 100%</span>
+          <span className="detail-metric-label">100명 동시 신청 검증</span>
+        </div>
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">p95 76% 개선</span>
+          <span className="detail-metric-label">매치 상세 조회 캐싱</span>
+        </div>
+        <div className="detail-metric-card">
+          <span className="detail-metric-value">에러율 0%</span>
+          <span className="detail-metric-label">GEO 검색 부하 테스트</span>
+        </div>
+      </div>
+
       {/* 1. Overview */}
       <section className="detail-section">
         <h3 className="section-sub-title">Overview</h3>
