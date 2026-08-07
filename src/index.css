@@ -712,16 +712,6 @@ ul {
   color: #a0a0a0;
 }
 
-.award-certificate {
-  width: 100%;
-  max-height: 220px;
-  object-fit: contain;
-  object-position: top;
-  margin-top: 18px;
-  border-radius: 10px;
-  border: 1px solid var(--border-color);
-}
-
 /* Projects */
 .project-grid {
   display: grid;

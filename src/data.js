@@ -208,8 +208,7 @@ export const awards = [
     date: "2026년 7월 30일",
     contest: "2026 지능형 애플리케이션 개발자 양성과정 5기 최종 프로젝트",
     award: "우수상",
-    organization: "SK쉴더스",
-    image: "/projects/smart-safety/award-excellence.jpg"
+    organization: "SK쉴더스"
   },
   {
     id: 1,

@@ -20,14 +20,6 @@ const Awards = () => {
               <div className="award-rank">{award.award}</div>
               <p className="award-org">{award.organization}</p>
               <p className="award-date">{award.date}</p>
-              {award.image && (
-                <img
-                  src={award.image}
-                  alt={`${award.contest} ${award.award} 수상 증서`}
-                  className="award-certificate"
-                  loading="lazy"
-                />
-              )}
             </div>
           </div>
         ))}
