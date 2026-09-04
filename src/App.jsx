@@ -4,6 +4,7 @@ import ProfileSection from './components/ProfileSection';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Awards from './components/Awards';
+import Certifications from './components/Certifications';
 import ProjectGallery from './components/ProjectGallery';
 import Contact from './components/Contact';
 import './index.css';
@@ -35,6 +36,7 @@ function App() {
         <ProfileSection />
         <Experience />
         <Awards />
+        <Certifications />
         <ProjectGallery />
         <Skills />
       </main>

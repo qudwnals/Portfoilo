@@ -225,3 +225,12 @@ export const awards = [
     organization: "동의대(링크 사업단)"
   }
 ];
+
+export const certifications = [
+  {
+    id: 1,
+    name: "SQLD (SQL 개발자)",
+    issuer: "한국데이터산업진흥원",
+    date: "2026년 9월 4일"
+  }
+];
