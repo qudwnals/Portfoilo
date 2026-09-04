@@ -110,17 +110,6 @@ export const projects = [
     github: "https://github.com/Mercenary-Project"
   },
   {
-    id: "open-closet",
-    title: "오픈 클로젯 (Open Closet)",
-    role: "백엔드 개발 (팀원 4명 중 2명 백엔드)",
-    period: "2025.03.20 ~ 2025.06.22",
-    techStack: ["Spring Boot", "MariaDB", "Docker", "React", "JPQL"],
-    summary: "위치 기반 P2P 중고의류 대여 서비스 플랫폼",
-    thumbnail: "/projects/open-closet/main-mockup.png",
-    details: "CUSTOM_COMPONENT:OpenCloset",
-    github: "https://github.com/DevFlow-DEU/OpenCloset_Back/tree/Min"
-  },
-  {
     id: "runners-high",
     title: "러너스 하이 (Runner's High)",
     role: "서비스 기획 및 백엔드 리드 개발",
@@ -131,6 +120,17 @@ export const projects = [
     details: "CUSTOM_COMPONENT:RunnerHigh",
     award: "최우수상",
     github: "https://github.com/Time-to-run/Runnershigh_bakc"
+  },
+  {
+    id: "open-closet",
+    title: "오픈 클로젯 (Open Closet)",
+    role: "백엔드 개발 (팀원 4명 중 2명 백엔드)",
+    period: "2025.03.20 ~ 2025.06.22",
+    techStack: ["Spring Boot", "MariaDB", "Docker", "React", "JPQL"],
+    summary: "위치 기반 P2P 중고의류 대여 서비스 플랫폼",
+    thumbnail: "/projects/open-closet/main-mockup.png",
+    details: "CUSTOM_COMPONENT:OpenCloset",
+    github: "https://github.com/DevFlow-DEU/OpenCloset_Back/tree/Min"
   },
   {
     id: "senti-logic",
