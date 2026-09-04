@@ -628,6 +628,48 @@ ul {
   gap: 24px;
 }
 
+.credentials-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.credentials-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.credentials-column-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-main);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.credentials-column-title svg {
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.credentials-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .credentials-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
 .award-card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
